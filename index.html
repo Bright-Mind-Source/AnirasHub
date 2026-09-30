@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal tutoring, resources, enrolment and meeting booking.">
+  <title>Your Name Tutoring | Learn With Confidence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="#home"><span class="brand-dot"></span>Your Name<span class="brand-accent">Tutoring</span></a>
+  <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <nav>
+    <a href="#about">About</a><a href="#subjects">Subjects</a><a href="#resources">Resources</a>
+    <a href="#booking">Book</a><a href="#enrol" class="nav-cta">Enrol</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">PERSONALISED • SUPPORTIVE • RESULTS-FOCUSED</p>
+    <h1>Learn with confidence.<br><span>Achieve your goals.</span></h1>
+    <p class="hero-text">Personalised tutoring designed around the way you learn — with clear explanations, useful resources and support between sessions.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="#booking">Book a meeting →</a>
+      <a class="btn secondary" href="#subjects">Explore subjects</a>
+    </div>
+    <div class="trust-row"><span>✓ Personalised lessons</span><span>✓ Study resources</span><span>✓ Flexible booking</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="card-glow"></div>
+    <div class="mini-label">YOUR LEARNING PLAN</div>
+    <div class="progress"><div style="width:72%"></div></div>
+    <div class="plan-row"><strong>Understanding</strong><span>72%</span></div>
+    <div class="plan-row"><strong>Practice</strong><span>64%</span></div>
+    <div class="plan-row"><strong>Confidence</strong><span>86%</span></div>
+    <div class="quote">“The goal isn't just to get the answer — it's to understand how to get there.”</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>1:1</strong><span>Personal attention</span></div>
+  <div><strong>100%</strong><span>Tailored sessions</span></div>
+  <div><strong>24/7</strong><span>Resource access</span></div>
+  <div><strong>Flexible</strong><span>Booking options</span></div>
+</section>
+
+<section id="about" class="section split">
+  <div>
+    <p class="eyebrow">ABOUT YOUR TUTOR</p>
+    <h2>A tutoring experience built around <span>you.</span></h2>
+  </div>
+  <div>
+    <p>Hi, I'm <strong>Your Name</strong>. I help students turn difficult topics into something they can actually understand and use.</p>
+    <p>My approach combines clear explanations, guided practice and targeted resources, so lessons are useful both inside and outside the classroom.</p>
+    <a href="#enrol" class="text-link">Start learning with me →</a>
+  </div>
+</section>
+
+<section id="subjects" class="section light">
+  <div class="section-heading">
+    <p class="eyebrow">WHAT I TEACH</p><h2>Choose your <span>focus.</span></h2>
+    <p>Replace these cards with your actual subjects and levels.</p>
+  </div>
+  <div class="cards">
+    <article class="subject-card"><div class="icon">01</div><h3>Mathematics</h3><p>Build understanding, solve problems confidently and prepare for assessments.</p><span>Grades 7–12</span></article>
+    <article class="subject-card"><div class="icon">02</div><h3>Science</h3><p>Break complex concepts into clear, memorable ideas with guided practice.</p><span>Grades 7–12</span></article>
+    <article class="subject-card"><div class="icon">03</div><h3>English</h3><p>Improve writing, comprehension, analysis and exam technique.</p><span>Grades 7–12</span></article>
+  </div>
+</section>
+
+<section id="resources" class="section">
+  <div class="section-heading"><p class="eyebrow">LEARNING HUB</p><h2>Resources that keep you <span>moving.</span></h2><p>Give students useful materials they can access whenever they need them.</p></div>
+  <div class="resource-grid">
+    <a class="resource" href="#" onclick="resourceNotice(event,'Revision Guides')"><div>📘</div><section><h3>Revision Guides</h3><p>Topic summaries and key concepts.</p></section><b>→</b></a>
+    <a class="resource" href="#" onclick="resourceNotice(event,'Practice Worksheets')"><div>📝</div><section><h3>Practice Worksheets</h3><p>Questions to reinforce learning.</p></section><b>→</b></a>
+    <a class="resource" href="#" onclick="resourceNotice(event,'Exam Preparation')"><div>🎯</div><section><h3>Exam Preparation</h3><p>Checklists, strategies and practice.</p></section><b>→</b></a>
+    <a class="resource" href="#" onclick="resourceNotice(event,'Recommended Videos')"><div>▶️</div><section><h3>Recommended Videos</h3><p>Curated explanations and walkthroughs.</p></section><b>→</b></a>
+  </div>
+</section>
+
+<section id="booking" class="section booking">
+  <div class="booking-copy"><p class="eyebrow">LET'S TALK</p><h2>Not sure where to start?</h2><p>Book a short introductory meeting to discuss your goals, what you're finding difficult and how tutoring could help.</p><ul><li>Discuss your goals</li><li>Ask questions before enrolling</li><li>Find a suitable lesson plan</li></ul></div>
+  <div class="booking-box"><h3>Book an introductory meeting</h3><p>Choose a convenient time using your booking calendar.</p>
+    <div class="calendar-placeholder"><span>📅</span><strong>Your booking calendar goes here</strong><small>Connect Calendly or Google Calendar after publishing.</small></div>
+    <a class="btn primary full" href="https://calendly.com/" target="_blank" rel="noopener">Open booking calendar →</a>
+  </div>
+</section>
+
+<section id="enrol" class="section light">
+  <div class="section-heading"><p class="eyebrow">GET STARTED</p><h2>Ready to <span>enrol?</span></h2><p>Send your details and I'll get back to you.</p></div>
+  <form id="enrolForm" class="form">
+    <div class="form-grid">
+      <label>Student name<input name="student" required placeholder="Full name"></label>
+      <label>Email<input type="email" name="email" required placeholder="student@example.com"></label>
+      <label>Year / Grade<input name="grade" placeholder="e.g. Grade 10"></label>
+      <label>Subject<select name="subject"><option>Mathematics</option><option>Science</option><option>English</option><option>Other</option></select></label>
+    </div>
+    <label>What would you like help with?<textarea name="message" rows="5" placeholder="Tell me about your goals, topics or upcoming exams..."></textarea></label>
+    <button class="btn primary" type="submit">Send enrolment request →</button>
+    <p id="formMessage" class="form-message"></p>
+  </form>
+</section>
+
+<section id="contact" class="section contact">
+  <div><p class="eyebrow">CONTACT</p><h2>Have a question?</h2><p>I'm happy to answer questions about lessons, availability, subjects or resources.</p></div>
+  <div class="contact-links">
+    <a href="mailto:your@email.com">✉ your@email.com</a>
+    <a href="https://instagram.com/" target="_blank">◎ @yourusername</a>
+  </div>
+</section>
+</main>
+
+<footer><div><strong>Your Name Tutoring</strong><p>Personalised tutoring. Practical support. Confident learning.</p></div><div>© <span id="year"></span> Your Name. All rights reserved.</div></footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
